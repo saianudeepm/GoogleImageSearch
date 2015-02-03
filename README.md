@@ -27,4 +27,4 @@ Completed all optional user stories:
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](anim_google_image_search_demo.gif)
+![Video Walkthrough](demo.gif)
