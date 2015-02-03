@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".SearchActivity"
+    android:background="#ff2e7f37">
+
+    <!-- place holder image -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ivThumbNail"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/thumbnail_description" 
+        android:src="@drawable/ic_placeholder"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPlaceHolder"
+        android:layout_below="@id/ivThumbNail"
+        android:gravity="center_horizontal"
+        android:text="Search Google Images for free :)"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="#ff343a7f" />
+    
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gvResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_margin="3dp"
+        app:column_count_portrait="2"
+        app:column_count_landscape="3"
+        android:transitionGroup="false" />
+
+</RelativeLayout>

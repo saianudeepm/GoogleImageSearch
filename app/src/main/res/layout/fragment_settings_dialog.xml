@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salome.googleimagesearch.fragments.SettingsDialogFragment"
+    android:id="@+id/settingsFragment"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Size"
+        android:id="@+id/tvImageSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnrImageSize"
+        android:layout_toRightOf="@+id/tvImageSize"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvImageSize"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Color"
+        android:id="@+id/tvImageColor"
+        android:layout_below="@+id/spnrImageSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Type"
+        android:id="@+id/tvImageType"
+        android:layout_below="@+id/tvImageColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site Filter"
+        android:id="@+id/tvSiteFilter"
+        android:layout_below="@+id/tvImageType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnrImageColor"
+        android:spinnerMode="dropdown"
+        android:layout_alignBottom="@+id/tvImageColor"
+        android:layout_toRightOf="@+id/tvImageColor"
+        android:layout_toEndOf="@+id/tvImageColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/spnrImageSize"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnrImageType"
+        android:spinnerMode="dropdown"
+        android:layout_alignBottom="@+id/tvImageType"
+        android:layout_toRightOf="@+id/tvImageColor"
+        android:layout_toEndOf="@+id/tvImageColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/spnrImageColor"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSiteFilter"
+        android:hint="eg: yahoo.com"
+        android:layout_alignBottom="@+id/tvSiteFilter"
+        android:layout_toRightOf="@id/tvSiteFilter"
+        android:layout_alignLeft="@id/spnrImageType"
+        android:layout_alignRight="@id/spnrImageType"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/tvSiteFilter"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/tvSiteFilter"
+        android:layout_toRightOf="@id/btnCancel"
+        android:layout_marginTop="15dp" 
+        />
+    
+    
+</RelativeLayout>
